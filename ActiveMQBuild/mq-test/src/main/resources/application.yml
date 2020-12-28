@@ -1,0 +1,16 @@
+
+#activeMq
+spring:
+  activemq:
+    #broker地址
+    broker-url: tcp://127.0.0.1:61616
+    #用户名
+    user: admin
+    #密码
+    password: admin
+  jms:
+    pub-sub-domain: true   #false:queue   true:topic
+myqueue: boot-active-mq-queue
+mytopic: boot-active-mq-topic
+server:
+  port: 8002
